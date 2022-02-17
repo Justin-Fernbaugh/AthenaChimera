@@ -13,6 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{5805e161-d4ff-40e0-8177-71c8881ef353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImGui">
+      <UniqueIdentifier>{d8264847-adb9-4b8d-950e-fc42ba4f8ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks">
+      <UniqueIdentifier>{1f77ea8f-a6fa-4954-8cf9-f552744aa44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MiniHooks">
+      <UniqueIdentifier>{aa72778c-22f2-44c7-9510-98b468023548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\featuers">
+      <UniqueIdentifier>{4dc3aea8-8f8a-4c99-97c4-89eebf6232d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{75f85393-8924-4c17-98cb-5264f109e132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Featuers">
+      <UniqueIdentifier>{d7826b2a-d025-4363-a893-079b2c99d67c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter1">
+      <UniqueIdentifier>{e63c935e-19b0-40fc-bf46-03254203c04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImGui">
+      <UniqueIdentifier>{649c4318-35e4-46ff-b60b-415c8fe10972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hooks">
+      <UniqueIdentifier>{95652cb1-b62a-40df-8c92-7c787a45f5e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MiniHooks">
+      <UniqueIdentifier>{9cdea36d-3de2-4ea5-af03-8a4915e7f8b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="external\freetype\include\dlg\dlg.h">
@@ -315,54 +348,6 @@
     <ClInclude Include="external\imgui\imconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="external\imgui\imgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imgui_freetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imgui_impl_dx9.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imgui_impl_win32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imgui_internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imstb_textedit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\imgui\imstb_truetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\hde\hde32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\hde\hde64.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\hde\pstdint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\hde\table32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\hde\table64.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\buffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\minhook.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="external\minhook\trampoline.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\core\interfaces.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -373,12 +358,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\definitions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\baseinterface.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\appsystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\data\vector.h">
@@ -408,9 +387,6 @@
     <ClInclude Include="cheat\sdk\interfaces\spatialquery.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\steamapi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\sdk\interfaces\weaponsystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -423,31 +399,7 @@
     <ClInclude Include="cheat\other\fnv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\engineclient.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\sdk\interfaces\netchannel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\effects.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\enginevgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\convar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\engineconvar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\gameeventmanager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\gametypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\surface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\interfaces\material.h">
@@ -460,12 +412,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\interfaces\modelinfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\baseclientdll.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\entity\handleentity.h">
@@ -489,37 +435,19 @@
     <ClInclude Include="cheat\sdk\entity\clientalphaproperty.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\entity\cliententity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\sdk\classes\soundinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\sdk\entity\entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\cliententitylist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\core\hooks.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\enginetraceclient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\core\netvar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\glowobjectmanager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\sdk\interfaces\viewrenderbeams.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\studiorender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\debugoverlay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\core\globals.h">
@@ -549,9 +477,6 @@
     <ClInclude Include="cheat\sdk\interfaces\localize.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\hud.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\other\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -567,166 +492,274 @@
     <ClInclude Include="cheat\sdk\entity\staticprop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cheat\sdk\interfaces\staticpropmgr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cheat\other\entities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheat\other\render.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="external\imgui\imgui.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_freetype.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_impl_win32.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_impl_dx9.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_internal.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_rectpack.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_textedit.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_truetype.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\buffer.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\minhook.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\trampoline.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\hde\hde32.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\hde\hde64.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\hde\table32.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\hde\table64.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="external\minhook\hde\pstdint.h">
+      <Filter>Header Files\MiniHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\appsystem.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\baseclientdll.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\baseinterface.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\cliententitylist.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\entity\cliententity.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\convar.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\debugoverlay.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\gameeventmanager.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\gametypes.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\glowobjectmanager.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\engineclient.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\effects.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\engineconvar.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\enginetraceclient.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\enginevgui.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\hud.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\steamapi.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\staticpropmgr.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\studiorender.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\surface.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\interfaces\texture.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="external\imgui\imgui.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_draw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_freetype.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_impl_dx9.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_impl_win32.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_tables.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\imgui\imgui_widgets.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\minhook\hde\hde32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\minhook\hde\hde64.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\minhook\buffer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\minhook\hook.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="external\minhook\trampoline.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="cheat\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\interfaces.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\imgui\imgui.cpp">
+      <Filter>Source Files\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\sdk\entity\entity.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\imgui\imgui_demo.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_draw.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_freetype.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_impl_dx9.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_tables.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\minhook\buffer.c">
+      <Filter>Source Files\MiniHooks</Filter>
     </ClCompile>
     <ClCompile Include="cheat\core\hooks.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\netvar.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\minhook\trampoline.c">
+      <Filter>Source Files\MiniHooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\ui.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\minhook\hde\hde32.c">
+      <Filter>Source Files\MiniHooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\endscene.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\minhook\hde\hde64.c">
+      <Filter>Source Files\MiniHooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\reset.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="external\minhook\hook.c">
+      <Filter>Source Files\MiniHooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\dopostscreenspaceeffects.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\sequence.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\painttraverse.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\allockeyvaluesmemory.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
     <ClCompile Include="cheat\core\functions\createmove.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\framestagenotify.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\dispatchusermessage.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\levelshutdown.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\levelinitpostentity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\overrideview.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\getviewmodelfov.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\dopostscreenspaceeffects.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
     <ClCompile Include="cheat\core\functions\drawmodelexecute.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\listleavesinbox.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\paint.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\globals.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\levelinitpreentity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\features\visuals.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\features\misc.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\endscene.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
     <ClCompile Include="cheat\core\functions\getplayermoney.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\other\events.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\getviewmodelfov.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\showalert.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\core\functions\framestagenotify.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\listleavesinbox.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\levelshutdown.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\levelinitpreentity.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\levelinitpostentity.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\paint.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\painttraverse.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\reset.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
     <ClCompile Include="cheat\core\functions\settingschattext.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\showalert.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\staticpropinit.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\onscreensizechanged.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\functions\overrideview.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\netvar.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\globals.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\interfaces.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\core\ui.cpp">
+      <Filter>Source Files\SDK</Filter>
     </ClCompile>
     <ClCompile Include="cheat\other\config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\staticpropinit.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\other\entities.cpp">
+      <Filter>Source Files\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\sequence.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\sdk\entity\entity.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\features\misc.cpp">
+      <Filter>Source Files\featuers</Filter>
     </ClCompile>
     <ClCompile Include="cheat\features\skins.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\featuers</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\dispatchusermessage.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\features\visuals.cpp">
+      <Filter>Source Files\featuers</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\other\entities.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\other\render.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\other\events.cpp">
+      <Filter>Source Files\SDK</Filter>
     </ClCompile>
     <ClCompile Include="cheat\other\memory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="cheat\core\functions\onscreensizechanged.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cheat\core\functions\allockeyvaluesmemory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cheat\other\render.cpp">
+      <Filter>Source Files\SDK</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -24,6 +24,7 @@
     <ProjectGuid>{badd49d7-9537-4191-b349-91ed4b122cb2}</ProjectGuid>
     <RootNamespace>kakhack</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>AthenaChimera</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
