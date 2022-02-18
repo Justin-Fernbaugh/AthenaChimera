@@ -1,11 +1,4 @@
 
-/*
-#include "Aimbot.hpp"
-#include "valve_sdk/sdk.hpp"
-#include "helpers/utils.hpp"
-#include "valve_sdk/csgostructs.hpp"
-
-*/
 #include "aimbot.h"
 
 #include "../other/render.h"

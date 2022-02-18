@@ -130,6 +130,11 @@ ImGui::Checkbox(#name, &v::misc.name.first); \
 ImGui::SameLine(offset); \
 ImGui::ColorEdit4(#name, v::misc.name.second.data())
 
+#define AIMBOT_COLOR_BOOL(name) \
+ImGui::Checkbox(#name, &v::aimbot.name.first); \
+ImGui::SameLine(offset); \
+ImGui::ColorEdit4(#name, v::aimbot.name.second.data())
+
 void HelpMarker(const char* desc)
 {
 	ImGui::SameLine();
@@ -180,6 +185,14 @@ void u::Render()
 	{
 	case 0:
 		ImGui::BeginChild(1, { }, true);
+
+		ImGui::Text("Renderables:");
+		HelpMarker("Shit that gets rendered");
+		ImGui::Separator();
+		ImGui::Spacing();
+		AIMBOT_COLOR_BOOL(AimbotEnable);
+		//VISUALS_COLOR_BOOL(box);
+
 		ImGui::EndChild();
 
 		break;

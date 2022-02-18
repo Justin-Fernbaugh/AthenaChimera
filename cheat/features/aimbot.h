@@ -1,6 +1,6 @@
 #pragma once
 
-
+/*
 #include "../other/render.h"
 #include "../sdk/definitions.h"
 #include "../core/interfaces.h"
@@ -13,6 +13,9 @@
 #include "../sdk/sdk.h"
 #include "../core/hooks.h"
 #include "../sdk/data/QAngle.hpp"
+*/
+#include "../core/interfaces.h"
+#include <vector>
 
 
 class Aimbot {

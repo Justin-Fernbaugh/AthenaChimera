@@ -30,6 +30,12 @@ namespace v
 	};
 	inline auto visuals = Visuals{ };
 
+	struct AimbotToggle
+	{
+		std::pair<bool, std::array<float, 4U>> AimbotEnable{ false, {1.00f, 1.f, 1.f, 1.f} };
+	};
+	inline auto aimbot = AimbotToggle{ };
+
 	struct Misc
 	{
 		bool bunnyHop = false;
