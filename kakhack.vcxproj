@@ -160,6 +160,7 @@
     <ClInclude Include="cheat\core\interfaces.h" />
     <ClInclude Include="cheat\core\ui.h" />
     <ClInclude Include="cheat\core\netvar.h" />
+    <ClInclude Include="cheat\features\aimbot.h" />
     <ClInclude Include="cheat\features\features.h" />
     <ClInclude Include="cheat\features\misc.h" />
     <ClInclude Include="cheat\features\visuals.h" />
@@ -179,6 +180,7 @@
     <ClInclude Include="cheat\sdk\data\bitbuf.h" />
     <ClInclude Include="cheat\sdk\data\datatable.h" />
     <ClInclude Include="cheat\sdk\data\matrix.h" />
+    <ClInclude Include="cheat\sdk\data\QAngle.hpp" />
     <ClInclude Include="cheat\sdk\data\utlvector.h" />
     <ClInclude Include="cheat\sdk\data\vector.h" />
     <ClInclude Include="cheat\sdk\definitions.h" />
@@ -370,6 +372,7 @@
     <ClCompile Include="cheat\core\interfaces.cpp" />
     <ClCompile Include="cheat\core\ui.cpp" />
     <ClCompile Include="cheat\core\netvar.cpp" />
+    <ClCompile Include="cheat\features\aimbot.cpp" />
     <ClCompile Include="cheat\features\misc.cpp" />
     <ClCompile Include="cheat\features\visuals.cpp" />
     <ClCompile Include="cheat\main.cpp" />

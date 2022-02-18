@@ -609,6 +609,12 @@
     <ClInclude Include="cheat\sdk\interfaces\texture.h">
       <Filter>Header Files\SDK</Filter>
     </ClInclude>
+    <ClInclude Include="cheat\features\aimbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\sdk\data\QAngle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cheat\main.cpp">
@@ -760,6 +766,9 @@
     </ClCompile>
     <ClCompile Include="cheat\other\render.cpp">
       <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat\features\aimbot.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
