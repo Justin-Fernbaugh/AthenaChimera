@@ -1,4 +1,5 @@
 #include "../hooks.h"
+#include "../../features/aimbot.h"
 
 bool __stdcall h::CreateMove(float frameTime, UserCmd* cmd)
 {
@@ -12,6 +13,7 @@ bool __stdcall h::CreateMove(float frameTime, UserCmd* cmd)
 
 	f::misc.RevealRanks(cmd);
 	f::misc.BunnyHop(cmd);
+	f::aimbot.OnCreateMove(cmd);
 
 	return false;
 }

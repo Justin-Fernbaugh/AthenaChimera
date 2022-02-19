@@ -15,6 +15,9 @@
 
 void Aimbot::OnCreateMove(UserCmd* cmd)
 {
+    if (!v::aimbot.AimbotEnable)
+        return;
+
     if (!g::localPlayer)
         return;
 
@@ -46,14 +49,20 @@ void Aimbot::OnCreateMove(UserCmd* cmd)
 
         g_EngineClient->SetViewAngles(&viewAngle);
         */
-        //auto test = ent->GetHitboxPos(0);
-        Vector test;
-        i::engine->GetViewAngles(test);
-        Vector localEyePosNew = g::localPlayer->GetEyePosition();
 
-        QAngle newTest = { test.x, test.y, test.z };
+        //i::engine->GetViewAngles(test);
+        Vector localEyePosNew = g::localPlayer->GetEyePosition();
+        Vector newTest = player->GetBonePosition(8);
+
+        //QAngle newTest = { test.x, test.y, test.z };
         //Math::AngleVectors(newTest, localEyePosNew);
         //Vector::RelativeAngle(localEyePosNew, newTest, test);
+        vec3 paramVal = { newTest.x, newTest.y, newTest.z };
+        vec3 paramValTwo = { localEyePosNew.x, localEyePosNew.y, localEyePosNew.z };
+
+        auto returnVal = CalcAngle(paramValTwo, paramVal);
+        Vector test = { returnVal.x, returnVal.y, returnVal.z };
+        
 
         //g_EngineClient->SetViewAngles(yours);
         i::engine->SetViewAngles(test);

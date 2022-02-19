@@ -32,7 +32,8 @@ namespace v
 
 	struct AimbotToggle
 	{
-		std::pair<bool, std::array<float, 4U>> AimbotEnable{ false, {1.00f, 1.f, 1.f, 1.f} };
+		//std::pair<bool, std::array<float, 4U>> AimbotEnable{ false, {1.00f, 1.f, 1.f, 1.f} };
+		bool AimbotEnable = false;
 	};
 	inline auto aimbot = AimbotToggle{ };
 
