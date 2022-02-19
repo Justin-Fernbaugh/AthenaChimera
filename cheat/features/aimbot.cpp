@@ -13,13 +13,13 @@
 #include "../core/hooks.h"
 #include "../sdk/data/QAngle.hpp"
 
-#include "../../external/imgui/imgui_internal.h"
-#include "../../external/imgui/imgui_impl_dx9.h"
+#include "../core/variables.h"
 
 void Aimbot::OnCreateMove(UserCmd* cmd)
 {
     if (!v::aimbot.AimbotEnable)
         return;
+    //ImGui::io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 
     
 
@@ -51,9 +51,9 @@ void Aimbot::OnCreateMove(UserCmd* cmd)
         auto returnVal = calcAngle(paramValTwo, paramVal);
         Vector test = { returnVal.x, returnVal.y, returnVal.z };
 
+        i::engine->SetViewAngles(test); 
         
-
-        if (ImGui::IsKeyPressed((ImGuiKey_V), true)) {
+        if (v::aimbot.AimbotEnable) {
             i::engine->SetViewAngles(test);
         }
         

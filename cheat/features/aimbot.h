@@ -22,6 +22,7 @@
 
 class Aimbot {
 private:
+
     struct vec3
     {
         float x, y, z;
@@ -81,6 +82,7 @@ private:
 
         return retAngle;
     }
+
 
 public:
 	void OnCreateMove(UserCmd* cmd);

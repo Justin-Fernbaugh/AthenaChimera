@@ -2,6 +2,7 @@
 
 #include <Windows.h>
 #include <stdexcept>
+#include "../core/variables.h"
 
 #include "../../external/imgui/imgui.h"
 #include "../../external/imgui/imgui_impl_dx9.h"
@@ -411,6 +412,10 @@ LRESULT CALLBACK WindowProcess(HWND window, UINT message, WPARAM wideParam, LPAR
 {
 	if (GetAsyncKeyState(VK_INSERT) & 1)
 		u::open = !u::open;
+
+	
+	if (GetAsyncKeyState(VK_F1) & 1)
+		v::aimbot.AimbotEnable = !v::aimbot.AimbotEnable;
 
 	if (u::open && ImGui_ImplWin32_WndProcHandler(window, message, wideParam, longParam))
 		return 1L;
