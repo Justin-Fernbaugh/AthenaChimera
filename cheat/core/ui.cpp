@@ -161,7 +161,7 @@ void u::Render()
 
 	ImGui::PushFont(segoe);
 	ImGui::SetNextWindowSize({ 512, 500 });
-	ImGui::Begin("kakhack v1", &open,
+	ImGui::Begin("AthenaChimera v1", &open,
 		ImGuiWindowFlags_NoResize |
 		ImGuiWindowFlags_NoCollapse |
 		ImGuiWindowFlags_NoSavedSettings //|

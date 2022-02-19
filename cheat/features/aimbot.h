@@ -15,6 +15,7 @@
 #include "../sdk/data/QAngle.hpp"
 */
 #include "../core/interfaces.h"
+#include "../sdk/data/matrix.h"
 #include <vector>
 #include <algorithm>
 #define PI 3.1415927f
@@ -46,6 +47,7 @@ private:
         return Magnitude(diff);
     }
 
+    /*
     vec3 CalcAngle(vec3 src, vec3 dst)
     {
         vec3 angle;
@@ -54,6 +56,32 @@ private:
         angle.z = 0.0f;
         return angle;
     }
+    */
+    void clampAngle(vec3& angle) {
+        std::clamp(angle.x, -89.f, 89.f);
+        std::clamp(angle.y, -180.f, 180.f);
+        angle.z = 0.0f;
+    }
+
+    void normalise(vec3& angle) {
+        if (angle.x > 89.0f) angle.x -= 180.0f;
+        if (angle.x < -89.0f) angle.x += 180.0f;
+        angle.y = std::remainderf(angle.y, 360.0f);
+    }
+
+    vec3 calcAngle(const vec3& source, const vec3& destination) {
+        vec3 retAngle;
+        vec3 delta = Subtract(source, destination);
+        float hyp = sqrtf(delta.x * delta.x + delta.y * delta.y);
+        retAngle.x = (float)(atan(delta.z / hyp) * (180.0f / PI));
+        retAngle.y = (float)(atan(delta.y / delta.x) * (180.0f / PI));
+        retAngle.z = 0.f;
+        if (delta.x >= 0.f)
+            retAngle.y += 180.f;
+
+        return retAngle;
+    }
+
 public:
 	void OnCreateMove(UserCmd* cmd);
 };
